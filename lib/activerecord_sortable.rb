@@ -1,5 +1,3 @@
-require 'activerecord'
-
 require 'activerecord_sortable/association'
 require 'activerecord_sortable/association_reflection'
 require 'activerecord_sortable/association_relation'
