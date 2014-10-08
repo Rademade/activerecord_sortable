@@ -1,2 +1,2 @@
-activerecord_srotable
+activerecord_sortable
 =====================
