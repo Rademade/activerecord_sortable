@@ -3,7 +3,6 @@ module ActiveRecord
   module Associations
     class HasManyAssociation
 
-      alias_method :original_reader, :reader
       alias_method :original_writer, :writer
 
       def writer(records)

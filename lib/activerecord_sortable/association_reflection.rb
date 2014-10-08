@@ -4,7 +4,7 @@ module ActiveRecord
     class AssociationReflection
 
       def sortable_field
-        @options.fetch(:sortable_field, :position)
+        @options.fetch(:sortable_field, :position).to_sym
       end
 
       def sortable?
