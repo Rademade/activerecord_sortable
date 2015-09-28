@@ -3,15 +3,15 @@ require 'spec_helper'
 describe 'Association reflection' do
 
   let(:post_reflection) do
-    User.reflections[:posts]
+    User.reflections['posts']
   end
 
   let(:user_post_reflection) do
-    User.reflections[:user_posts]
+    User.reflections['user_posts']
   end
 
   let(:sorted_post_reflection) do
-    User.reflections[:sorted_posts]
+    User.reflections['sorted_posts']
   end
 
   describe '.sortable?' do
