@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     activerecord_sortable (0.0.3)
-      rails
+      rails (>= 4.2.0)
 
 GEM
   remote: https://rubygems.org/
