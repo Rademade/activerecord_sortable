@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = 'It adds possibility for sorting relation'
   s.licenses    = ['MIT']
 
-  s.add_dependency 'rails'
+  s.add_dependency 'rails', '~> 4.1.0'
 
   s.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.test_files = Dir.glob('spec/**/*')
