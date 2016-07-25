@@ -2,14 +2,14 @@
 module ActiveRecord
   module Associations
     module Builder
-      class Association
+      class Association #:nodoc:
+        SORTABLE_OPTIONS = [:sortable, :sortable_field].freeze
 
-        alias_method :original_valid_options, :valid_options
-
-        def valid_options
-          original_valid_options + [:sortable, :sortable_field]
+        def self.valid_options(_)
+          VALID_OPTIONS +
+            SORTABLE_OPTIONS +
+            Association.extensions.flat_map(&:valid_options)
         end
-
       end
     end
   end
